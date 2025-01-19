@@ -1,7 +1,7 @@
 'use strict';
 
 const listElement = document.querySelector('ul');
-const ListItems = [...document.querySelectorAll('li')];
+const listItems = [...document.querySelectorAll('li')];
 
 function sortList(list) {
   return list.sort((a, b) => {
@@ -25,7 +25,7 @@ function getEmployees(list) {
   }));
 }
 
-const sortedList = sortList(ListItems);
+const sortedList = sortList(listItems);
 
 listElement.innerHTML = '';
 
